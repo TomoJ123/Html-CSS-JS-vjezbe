@@ -1,0 +1,72 @@
+.column-layout {
+		max-width:1000px;
+		background-color:#FFEBCD;
+		justify-content: center;
+		margin: 40 px;
+		line-height:1.65;
+		padding:30px 50px;
+		display:flex;
+}
+
+
+h1{
+	color:red;
+	text-align:center;
+	padding-bottom:5px;
+}
+
+
+h2{
+	font-weight: bold;
+	color: #fff;
+	font-size: 32px;
+	 text-align:center;
+}
+
+div {
+	column-gap:40px;
+}
+
+
+.main-column {
+	
+	flex:3;
+	order:2;
+	
+	
+}
+
+.lijevo {
+	flex:1;
+	order:1;
+}
+
+
+.desno {
+	flex:1;
+	order:3;
+}
+
+.slika {
+	display:flex;
+	max-width:1000px;
+	align-items:strech;
+	 justify-content:center;
+	 margin: 40 px;
+		line-height:1.65;
+		padding:30px 50px;
+}
+
+.1 {
+	
+	flex: 50%;
+	padding:5px;
+	
+	
+}
+ .zanimljivosti {
+	 flex:50%;
+	 background-color:#A9A9A9;
+	 
+ }
+

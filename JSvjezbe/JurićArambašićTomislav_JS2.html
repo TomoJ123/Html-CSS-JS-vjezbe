@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	</head>
+	
+	<body>
+	<script>
+		function glavna(callback,x,y,z) {console.log(callback(x,y,z));};
+		function zad3(x,y,z){
+			if (z == '+')
+				{return x+y;};
+			if (z == '-')
+				{return x-y;};
+			if (z == '*')
+				{return x*y;};
+			if (z == '/')
+				{return x/y;};
+		};
+		function opseg(var1,var2,var3) {return var1+var2+var3;};
+		function zbrojumnozak(var1,var2) {return [var1+var2,var1*var2];};
+		let var1 = 0;
+		var1 =+ prompt("unesite broj");
+		let var2 = 0;
+		var2 =+ prompt("unesite broj");
+		let var3 = 0;
+		var3 =+ prompt("unesite broj");
+		
+		console.log(opseg(var1,var2,var3));
+		console.log(zbrojumnozak(var1,var2));
+
+		glavna(zad3,5,6,'/');
+		
+		
+		
+	</script>	
+	</body>
+</html>

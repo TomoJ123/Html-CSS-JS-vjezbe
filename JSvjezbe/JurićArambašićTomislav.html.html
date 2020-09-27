@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	</head>
+	
+	<body>
+	<script>
+		var a = 7;
+		var test =
+				(a==5) ? "a je pet" :
+				(a==6) ? "a je sest" :
+				(a==7) ? "a je sedam" :
+				"a je neki drugi broj";
+				
+		console.log(test);
+		
+		
+		godina="";
+		let godinarodenja = prompt("upisi godinu rodenja");
+		switch(godinarodenja) {
+			case "1998":
+				godina = "imas 21 godinu mozes uc";
+				break;
+			case "1999":
+				godina = "mozes uci 20 imas";
+				break;
+			case "2000":
+				godina = "mozes uci 19 imas";
+				break;
+			case "2001":
+				godina = "mozes uci 18 imas";
+				break;
+			case "2000":
+				godina = "ne mozes uci 17 imas";
+				break;
+			default:
+				godina = "ovo je maturalna ,od 21 do 18!."
+				}
+			console.log(godina);
+			
+		
+		
+		let i = 20;
+		var zbroj = 0;
+		while(i!=121){
+			if (i%3 === 0 && i%10 ===0){ console.log(i); }
+			else {
+				zbroj=zbroj+i;}
+			i++;
+		}
+		console.log(zbroj);
+		
+		zbroj = 0;
+		let p=20;
+		for(; p<=120; p++) {
+			if (p%3 === 0 && p%10 ===0){ console.log(p); }
+			else {
+				zbroj=zbroj+p;}
+		}
+		console.log(zbroj);
+	</script>	
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	</head>
+	
+	<body>
+	<script>
+
+	   function parnost(broj) {
+		if(broj % 2 == 0) {
+		 return broj; }
+	}	
+	
+	function fja1() {
+		let i = 1;
+		return function() {return i++;}; 
+		}
+	
+		
+	let broj;
+	let brojac1 = fja1();
+	let brojac2= fja1();
+	while(true) {
+		broj = prompt("unesi broj:");
+		if(broj == 0)
+		{ break; }
+		if(parnost(broj)) 
+		{	console.log(brojac1()); 	
+				}
+		else 
+		{	console.log(brojac2());
+				}
+	}
+			
+		
+//drugi		
+var Test = (predmet) => { 
+		return (ostbod) => {
+			return (ukbod) => {
+				console.log(`iz predmeta ${predmet} ste ostvarili ${ostbod / ukbod * 100} %`);
+			}
+		}
+}
+	
+	
+		Test("OBP")(46)(100);
+	</script>	
+	</body>
+</html>

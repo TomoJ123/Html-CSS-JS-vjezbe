@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	</head>
+	
+	<body>
+	<script>
+	/* nizovi */
+		let max = 500;
+		let min = 100;
+	  
+	  for(var a =[],i = 0;i<30;++i)
+	  {
+		a[i] = Math.floor(Math.random() * (max - min) ) + min;
+	  }
+	  console.log(a);
+	var b = [];
+	  for(j=0,k=0;j<30;++j)
+	  {
+		if(a[j] >= 300 && a[j] <= 400)
+		{
+			b[k] = a[j];
+			k++;
+			a.splice(j,1);
+		}
+	  }
+	  b.sort();
+	  console.log(b);
+	  b.shift();
+	  b.pop();
+	  
+	  var zbroj = 0;
+	  for(i=0;i<b.length;++i) {
+			zbroj += b[i];
+		 }
+		 
+		console.log(zbroj);
+	  
+	  /* stringovi */
+	  var s = "cascading style sheets";
+	  
+	  var kratica = "";
+	  kratica += s[0].toUpperCase();
+	  
+	  for(i=0;i<s.length;++i)
+	  {
+		if(s[i] ==' ')
+			{
+				kratica += s[i+1].toUpperCase();
+			}
+		}
+		
+		console.log(kratica);
+		var res = s.concat('(' + kratica + ')');
+		console.log(res);
+		
+		var letter = 's';
+		var lettercount = 0;
+		for(i = 0; i< res.length;++i)
+		{
+			if(res.charAt(i) == letter)
+			{lettercount++;}
+		}
+		console.log(lettercount);
+		
+	
+	 
+	  
+	  
+	  
+	  
+	  
+	  
+	</script>	
+	</body>
+</html>
